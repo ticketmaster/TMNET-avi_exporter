@@ -1,0 +1,506 @@
+    [
+        {
+            "metric": "l4_client.avg_tx_bytes",
+            "help": "Average rate of bytes transmitted per second"
+        },
+        {
+            "metric": "l4_client.avg_rx_bytes",
+            "help": "Average rate of bytes received per second"
+        },
+        {
+            "metric": "l4_client.apdexc",
+            "help": "Measures the network connection quality (errors and lossy connections) between clients and the VS. (VS)"
+        },
+        {
+            "metric": "l4_client.apdexrtt",
+            "help": "Measures the network connection quality against the Round Trip Time between clients and the VS. (VS)"
+        },
+        {
+            "metric": "l4_client.avg_application_dos_attacks",
+            "help": "Number of application layer DoS attacks occurring. (VS)"
+        },
+        {
+            "metric": "l4_client.avg_bandwidth",
+            "help": "Average transmit and receive network bandwidth between client and virtual service. (VS)"
+        },
+        {
+            "metric": "l4_client.avg_complete_conns",
+            "help": "Rate of total connections completed (closed) per second. (VS)"
+        },
+        {
+            "metric": "l4_client.avg_connections_dropped",
+            "help": "Rate of dropped connections per second. (VS)"
+        },
+        {
+            "metric": "l4_client.avg_dos_attacks",
+            "help": "Number of application plus network layer DoS attacks occurring. (VS)"
+        },
+        {
+            "metric": "l4_client.avg_dos_bandwidth",
+            "help": "Average transmit and receive network bandwidth between client and virtual service related to DoS attack. (VS)"
+        },
+        {
+            "metric": "l4_client.avg_errored_connections",
+            "help": "Rate of connections per second classified as errored, having network connection errors. (VS)"
+        },
+        {
+            "metric": "l4_client.avg_l4_client_latency",
+            "help": "Average L4 connection duration which does not include client RTT. (VS)"
+        },
+        {
+            "metric": "l4_client.avg_lossy_connections",
+            "help": "Rate of connections per second classified as lossy, having significant packet loss and retransmits. (VS)"
+        },
+        {
+            "metric": "l4_client.avg_network_dos_attacks",
+            "help": "Number of network layer DoS attacks occurring. (VS)"
+        },
+        {
+            "metric": "l4_client.avg_new_established_conns",
+            "help": "New client connections per second. (VS)"
+        },
+        {
+            "metric": "l4_client.avg_policy_drops",
+            "help": "Rate of connections dropped per second due to virtual service policies. This includes rate limits, security policies, and connection limits. (VS)"
+        },
+        {
+            "metric": "l4_client.avg_total_rtt",
+            "help": "Average network round trip time between client and virtual service. (VS)"
+        },
+        {
+            "metric": "l4_client.max_open_conns",
+            "help": "Maximum number of concurrently open connections. (VS)"
+        },
+        {
+            "metric": "l4_client.pct_application_dos_attacks",
+            "help": "Percentage of HTTP application requests classified as a DoS attack. (VS)"
+        },
+        {
+            "metric": "l4_client.pct_connection_errors",
+            "help": "Percentage of network connections to the virtual service classified as errored due to dropped or lossy. (VS)"
+        },
+        {
+            "metric": "l4_client.pct_connections_dos_attacks",
+            "help": "Percentage of network connections classfied as a DoS attack. (VS)"
+        },
+        {
+            "metric": "l4_client.pct_dos_bandwidth",
+            "help": "Percentage of network bandwidth classified as part of a DoS attack. (VS)"
+        },
+        {
+            "metric": "l4_client.pct_dos_rx_bytes",
+            "help": "Percentage of bytes received that are classified as part of a DoS atack. (VS)"
+        },
+        {
+            "metric": "l4_client.pct_pkts_dos_attacks",
+            "help": "Percentage of packets that are classified as part of a DoS attack. (VS)"
+        },
+        {
+            "metric": "l4_client.pct_policy_drops",
+            "help": "Percentage of network connections dropped due to a virtual service network security policy. (VS)"
+        },
+        {
+            "metric": "l4_client.sum_connection_errors",
+            "help": "Total number of client network connections that were lossy or dropped. (VS)"
+        },
+        {
+            "metric": "l4_client.sum_finished_conns",
+            "help": "Total number of completed connections. (VS)"
+        },
+        {
+            "metric": "l4_client.sum_lossy_connections",
+            "help": "Total connections that were classified as lossy due to high packet retransmissions. (VS)"
+        },
+        {
+            "metric": "l4_client.sum_lossy_req",
+            "help": "Total HTTP requests that were classified as lossy due to high packet retransmissions. (VS)"
+        },
+        {
+            "metric": "l4_server.apdexc",
+            "help": "Measures the network connection quality (errors and lossy connections) between Service Engines and servers. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_available_capacity",
+            "help": "Estimated connections per second capacity available for a server. This metric is the difference between the max capacity and the averaged load on a server. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_bandwidth",
+            "help": "Average transmit and receive network bandwidth between client and virtual service. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_complete_conns",
+            "help": "Rate of new connections per second. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_connections_dropped",
+            "help": "Rate of dropped connections per second. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_errored_connections",
+            "help": "Rate of total errored connections per second. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_est_capacity",
+            "help": "Estimated averaged capacity of a server’s connections per second summed across all Service Engines. Pool level metric reflects summed estimated capacity across all the servers in the pool. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_goodput",
+            "help": "Application data goodput (data excluding network headers) as bytes per second between the Service Engine and server. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_health_status",
+            "help": "Health score status of the server. 0 is down, 1 is up though with significant issues, 100 is ideal. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_lossy_connections",
+            "help": "Rate of lossy connections per second between the Service Engine and server. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_new_established_conns",
+            "help": "Rate of new established connections per second between Service Engine and server. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_open_conns",
+            "help": "Number of concurrently open connections between Service Engines and servers. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_pool_bandwidth",
+            "help": "Transmit and receive network bandwidth between Service Engines and all servers in a pool. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_pool_complete_conns",
+            "help": "New connections per second across the VS or pool, divided by the number of active (up state) servers. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_pool_errored_connections",
+            "help": "Total connections classified as errored between Service Engines and all servers in a pool. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_pool_new_established_conns",
+            "help": "Total new connections per second established between Service Engines and all servers in a pool. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_total_rtt",
+            "help": "Average Round Trip Time across all completed (closed) connections. (VS, P)"
+        },
+        {
+            "metric": "l4_server.avg_uptime",
+            "help": "Percent of time a server was marked as up. (VS, P)"
+        },
+        {
+            "metric": "l4_server.max_open_conns",
+            "help": "Maximum number of concurrently open connections to a server. (VS, P)"
+        },
+        {
+            "metric": "l4_server.pct_connection_errors",
+            "help": "Percent of network connections between Service Engines and a server that were dropped or lossy. (VS, P)"
+        },
+        {
+            "metric": "l4_server.pct_connection_saturation",
+            "help": "Percent of a server’s connection per second capacity that is estimated to be utilized. (VS, P)"
+        },
+        {
+            "metric": "l4_server.sum_connection_errors",
+            "help": "Total number of network connections to a server that were dropped or were classified as lossy. (VS, P)"
+        },
+        {
+            "metric": "l4_server.sum_connections_dropped",
+            "help": "Total number of network connections to a server that were dropped. (VS, P)"
+        },
+        {
+            "metric": "l4_server.sum_finished_conns",
+            "help": "Total number of completed connections to a server. (VS, P)"
+        },
+        {
+            "metric": "l4_server.sum_health_check_failures",
+            "help": "Total number of times a server was marked down by health monitors. (VS, P)"
+        },
+        {
+            "metric": "l4_server.sum_lossy_connections",
+            "help": "Total number of network connections to a server that were classified as lossy. (VS, P)"
+        },
+        {
+            "metric": "l4_server.sum_lossy_req",
+            "help": "Total number of HTTP requests that were classified as lossy due to high packet retransmissions. (VS, P)"
+        },
+        {
+            "metric": "l7_client.apdexr",
+            "help": "Measures the clients view of the quality (response time and errors) of server responses. (VS, P)"
+        },
+        {
+            "metric": "l7_client.avg_application_response_time",
+            "help": "Average server / application response latency. (VS, P)"
+        },
+        {
+            "metric": "l7_client.avg_blocking_time",
+            "help": "Average time client was blocked as reported by client. Requires Client Insights set to Active. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_browser_rendering_time",
+            "help": "Average time browser spend rendering a web page. Requires Client Insights set to Active. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_client_data_transfer_time",
+            "help": "Average time required to transmit a file via layer 7 protocol (such as HTTP) from a virtual service to a client, excluding the Round Trip Time. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_client_rtt",
+            "help": "Average Round Trip Time between client and virtual service. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_client_txn_latency",
+            "help": "Client transaction time averaged across all HTTP requests. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_complete_responses",
+            "help": "Average rate of HTTP responses sent to clients per second. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_connection_time",
+            "help": "Average client connection latency as reported by client. Requires Client Insights set to Active to gather RUM data. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_dns_lookup_time",
+            "help": "Average DNS name lookup time as reported by the client. Requires Client Insights set to Active to gather RUM data. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_dom_content_load_time",
+            "help": "Average Dom content load time as reported by clients. Requires Client Insights set to Active to gather RUM data. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_error_responses",
+            "help": "Rate of HTTP error responses per second sent to clients. It does not include error codes that have been excluded in analytics profile. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_frustrated_responses",
+            "help": "Number of client HTTP requests that are completed but classified in the Frustrated latency bucket. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_page_download_time",
+            "help": "Page download time as reported by clients. Requires Client Insights set to Active. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_page_load_time",
+            "help": "Page load time as reported by clients. Requires Client Insights set to Active. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_redirection_time",
+            "help": "Latency incurred by following redirects as reported by clients. Requires Client Insights set to Active. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_resp_1xx",
+            "help": "Rate of HTTP 1xx responses sent to clients. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_resp_2xx",
+            "help": "Rate of HTTP 2xx responses sent to clients. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_resp_3xx",
+            "help": "Rate of HTTP 3xx responses sent to clients. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_resp_4xx",
+            "help": "Rate of HTTP 4xx responses sent to clients. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_resp_4xx_avi_errors",
+            "help": "Rate of HTTP 4xx responses sent to clients from Avi, such as via custom security policies. This does not include errors excluded via the analytics profile or server generated 4xx errors. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_resp_5xx",
+            "help": "Rate of HTTP 5xx responses sent to clients. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_resp_5xx_avi_errors",
+            "help": "Rate of HTTP 5xx responses sent to clients from Avi, such as via custom security policies. This does not include errors excluded via the analytics profile or server generated 5xx errors. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_rum_client_data_transfer_time",
+            "help": "Total client data transfer time as reported by clients. Requires Client Insights set to Active to gather RUM data. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_satisfactory_responses",
+            "help": "Number of client HTTP requests that are completed and classified in the Satisfied latency bucket. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_server_rtt",
+            "help": "Average Round Trip Time between the Service Engine and server. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_service_time",
+            "help": "Average latency from the virtual services receipt of a request to start of the response. Requires Client Insights set to Active to gather RUM data. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_ssl_connections",
+            "help": "New SSL transactions per second (TPS), including SSL session reuse and failed handshake negotiations. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_ssl_errors",
+            "help": "SSL connection errors per second due to clients, protocol errors, network errors and handshake timeouts (VS)"
+        },
+        {
+            "metric": "l7_client.avg_ssl_failed_connections",
+            "help": "SSL connection errors per second due to protocol, network, or timeout issues. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_ssl_handshakes_new",
+            "help": "New SSL transactions per second (TPS), excluding session reuse and errored connection attempts. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_ssl_handshakes_non_pfs",
+            "help": "New SSL handshakes / transactions per second (TPS) that did not use Perfect Forward Secrecy. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_ssl_handshakes_pfs",
+            "help": "New SSL handshakes / transactions per second (TPS) that used Perfect Forward Secrecy. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_ssl_handshakes_reused",
+            "help": "Successfully resumed SSL sessions per second. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_tolerated_responses",
+            "help": "Number of HTTP requests which had response latency classified as Tolerated per the virtual service analytics profile. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_total_requests",
+            "help": "Client HTTP requests per second received by the virtual service. (VS)"
+        },
+        {
+            "metric": "l7_client.avg_waiting_time",
+            "help": "Average waiting time reported by the client. Requires Client Insights set to Active. (VS)"
+        },
+        {
+            "metric": "l7_client.max_ssl_open_sessions",
+            "help": "Maximum number of concurrently open SSL sessions. (VS)"
+        },
+        {
+            "metric": "l7_client.pct_cache_hits",
+            "help": "Percent of HTTP requests served from cache. (VS)"
+        },
+        {
+            "metric": "l7_client.pct_cacheable_hits",
+            "help": "Percent of HTTP requests that were eligible to be served from cache. (VS)"
+        },
+        {
+            "metric": "l7_client.pct_response_errors",
+            "help": "Percent of 4xx and 5xx HTTP responses. (VS)"
+        },
+        {
+            "metric": "l7_client.pct_ssl_failed_connections",
+            "help": "Percent of SSL connection failures due to protocol, network, or timeout errors. (VS)"
+        },
+        {
+            "metric": "l7_client.rum_apdexr",
+            "help": "Quality (combination of performance and errors) of HTTP responses to clients based on RUM data. Requires Client Insights set to Active for RUM data. (VS)"
+        },
+        {
+            "metric": "l7_client.sum_errors",
+            "help": "Total number of HTTP 400 and 500 errors sent to a client. (VS)"
+        },
+        {
+            "metric": "l7_client.sum_get_reqs",
+            "help": "Total number of HTP GET requests. (VS)"
+        },
+        {
+            "metric": "l7_client.sum_num_rum_samples",
+            "help": "Total number of samples used for RUM metrics. Requires Client Insights set to Active to gather RUM data. (VS)"
+        },
+        {
+            "metric": "l7_client.sum_other_reqs",
+            "help": "Total number of HTTP requests that are not GET or POST requests. (VS)"
+        },
+        {
+            "metric": "l7_client.sum_post_reqs",
+            "help": "Total number of HTTP POST requests. (VS)"
+        },
+        {
+            "metric": "l7_client.sum_total_responses",
+            "help": "Total number of HTTP responses sent to clients. (VS)"
+        },
+        {
+            "metric": "l7_server.apdexr",
+            "help": "Quality (combination of performance and errors) of HTTP responses from servers to the virtual service. (VS)"
+        },
+        {
+            "metric": "l7_server.avg_application_response_time",
+            "help": "Average response latency measured of pool servers. (VS)"
+        },
+        {
+            "metric": "l7_server.avg_complete_responses",
+            "help": "Rate of server HTTP responses per second. (VS, P)"
+        },
+        {
+            "metric": "l7_server.avg_error_responses",
+            "help": "Rate of HTTP error responses sent per second. Does not include errors excluded in analytics profile. (VS, P)"
+        },
+        {
+            "metric": "l7_server.avg_frustrated_responses",
+            "help": "Number of HTTP requests completed which had server response latency classified as Frustrated per the virtual service analytics profile. (VS, P)"
+        },
+        {
+            "metric": "l7_server.avg_resp_1xx",
+            "help": "Rate of 1xx HTTP responses sent per second. (VS, P)"
+        },
+        {
+            "metric": "l7_server.avg_resp_2xx",
+            "help": "Rate of 2xx HTTP responses sent per second. (VS, P)"
+        },
+        {
+            "metric": "l7_server.avg_resp_3xx",
+            "help": "Rate of 3xx HTTP responses sent per second. (VS, P)"
+        },
+        {
+            "metric": "l7_server.avg_resp_4xx",
+            "help": "Rate of 4xx HTTP responses sent per second. (VS, P)"
+        },
+        {
+            "metric": "l7_server.avg_resp_4xx_errors",
+            "help": "Rate of 4xx HTTP responses per second minus error codes excluded by the analytics profile. (VS, P)"
+        },
+        {
+            "metric": "l7_server.avg_resp_5xx",
+            "help": "Rate of 5xx HTTP responses sent per second. (VS, P)"
+        },
+        {
+            "metric": "l7_server.avg_resp_5xx_errors",
+            "help": "Rate of 5xx HTTP responses per second minus error codes excluded by the analytics profile. (VS, P)"
+        },
+        {
+            "metric": "l7_server.avg_resp_latency",
+            "help": "Latency measured for pool servers. (VS, P)"
+        },
+        {
+            "metric": "l7_server.avg_satisfactory_responses",
+            "help": "Number of HTTP requests completed which had server response latency classified as Satisfied per the virtual service analytics profile. (VS, P)"
+        },
+        {
+            "metric": "l7_server.avg_tolerated_responses",
+            "help": "Number of HTTP requests completed which had server response latency classified as Tolerated per the virtual service analytics profile. (VS, P)"
+        },
+        {
+            "metric": "l7_server.avg_total_requests",
+            "help": "Rate of HTTP requests per second received by pool servers. (VS, P)"
+        },
+        {
+            "metric": "l7_server.pct_response_errors",
+            "help": "Percent of HTTP 4xx and 5xx server responses. (VS, P)"
+        },
+        {
+            "metric": "l7_server.sum_get_reqs",
+            "help": "Total number of HTTP GET requests received by servers. (VS, P)"
+        },
+        {
+            "metric": "l7_server.sum_other_reqs",
+            "help": "Total number of HTTP requests that are not GET or POST request received by servers. (VS, P)"
+        },
+        {
+            "metric": "l7_server.sum_post_reqs",
+            "help": "Total number of HTTP POST requests received by servers. (VS, P)"
+        },
+        {
+            "metric": "l7_server.sum_total_responses",
+            "help": "Total number of HTTP responses sent from servers. (VS, P)"
+        }
+    ]

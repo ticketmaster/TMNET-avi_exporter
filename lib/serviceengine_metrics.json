@@ -1,0 +1,62 @@
+[
+    {
+        "metric": "se_if.avg_bandwidth",
+        "help": "Transmit and receive network bandwidth across all Service Engine interfaces. (VS, SE)"
+    },
+    {
+        "metric": "se_stats.avg_connection_mem_usage",
+        "help": "Percent of connection memory consumed. (VS, SE)"
+    },
+    {
+        "metric": "se_stats.avg_connections",
+        "help": "Rate of client network connection attempts (SYNs) per second across all virtual services for a Service Engine. (VS, SE)"
+    },
+    {
+        "metric": "se_stats.avg_connections_dropped",
+        "help": "Number of connections dropped or failed to establish across all virtual services for a Service Engine. Excludes drops due to a policy action. (VS, SE)"
+    },
+    {
+        "metric": "se_stats.avg_cpu_usage",
+        "help": "Hosts view of the Service Engines actively utilized CPU usage as a percent of total available CPU. (VS, SE)"
+    },
+    {
+        "metric": "se_stats.avg_disk1_usage",
+        "help": "Percent of Service Engine disk 1 capacity used(VS, SE)"
+    },
+    {
+        "metric": "se_stats.avg_mem_usage",
+        "help": "Percent of allocated memory used(VS, SE)"
+    },
+    {
+        "metric": "se_stats.avg_packet_buffer_header_usage",
+        "help": "Percent of all network packet buffers used. (VS, SE)"
+    },
+    {
+        "metric": "se_stats.avg_packet_buffer_large_usage",
+        "help": "Percent of large network packet buffers used. (VS, SE)"
+    },
+    {
+        "metric": "se_stats.avg_packet_buffer_small_usage",
+        "help": "Percent of small network packet buffers used. (VS, SE)"
+    },
+    {
+        "metric": "se_stats.avg_packet_buffer_usage",
+        "help": "Percent of total configured network packet buffers used. (VS, SE)"
+    },
+    {
+        "metric": "se_stats.avg_persistent_table_usage",
+        "help": "Percent of session persistence table used. (VS, SE)"
+    },
+    {
+        "metric": "se_stats.avg_ssl_session_cache_usage",
+        "help": "Percent of SSL session cache used. (VS, SE)"
+    },
+    {
+        "metric": "se_stats.pct_connections_dropped",
+        "help": "Percent of Service Engine connections dropped. (VS, SE)"
+    },
+    {
+        "metric": "se_stats.pct_syn_cache_usage",
+        "help": "Percent of SYN cache used. Higher usage indicates too many incomplete open connection attempts. (VS, SE)"
+    }
+]

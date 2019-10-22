@@ -1,0 +1,19 @@
+[
+    {
+        "metric": "controller_stats.avg_cpu_usage",
+        "help": "This is the host's view of the CPU usage as amount of actively used virtual CPU, as a percentage of total available CPU"
+    },
+    {
+        "metric": "controller_stats.avg_disk_usage",
+        "help": "Average disk usage"
+    },
+    {
+        "metric": "controller_stats.avg_mem_usage",
+        "help": "Memory usage as percentage of total configured or available memory"
+    },
+    {
+        "metric": "controller_stats.sum_total_vs_client_bytes",
+        "help": "Sum of bytes including traffic from client, across all VS"
+    }
+
+]
